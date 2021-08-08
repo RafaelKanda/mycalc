@@ -56,6 +56,15 @@ function calcular() {
         case '*':
             res = myCalc.multiplicar(num1, num2);
             break;
+        case 'pt':
+            res = myCalc.potencia(num1, num2);
+            break;
+        case 'rd':
+            res = myCalc.radiciacao(num1, num2);
+            break;
+        case 'fat':
+            res = myCalc.fatorial(num1);
+            break;
     }
     res = res.toString();
     txtInput.value = res.length <= 10 ? res : res.substr(0, 10);
